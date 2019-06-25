@@ -1,0 +1,12 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+#
+# BEFORE EDITING THIS FILE: Please only add files that are created by this
+# project as artifacts or as the result of running tools that are used.
+# Other common files (.DS_Store, *.swap, .vscode, etc.) should be ignored
+# in your global .gitignore file on your own device.
+
+build.zip
+coverage
+dist
+env.json
+node_modules
