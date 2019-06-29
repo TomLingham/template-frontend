@@ -1,7 +1,7 @@
 {
-  "name": "frontend-template",
+  "name": "template-frontend",
   "version": "0.0.0",
-  "description": "",
+  "description": "Template Frontend",
   "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=production webpack -r ../../../../webpack/register-ts.js --config ./webpack/webpack.config.prod.ts",
@@ -11,9 +11,13 @@
     "format:fix": "npm run format -- --write",
     "test": "jest --verbose",
     "test:watch": "npm run test -- --watch",
-    "types:check": "tsc --noEmit"
+    "types:check": "tsc --noEmit",
+    "name": "echo $npm_package_name",
+    "version": "echo $npm_package_version"
   },
-  "author": "Tom Lingham <tom@jobi.sh",
+  "authors": [
+    "Tom Lingham <tom@jobi.sh>"
+  ],
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
@@ -36,7 +40,7 @@
     "@types/webpack-manifest-plugin": "^2.0.0",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
-    "babel-plugin-styled-components": "^1.10.2",
+    "babel-plugin-styled-components": "^1.10.4",
     "core-js": "^3.1.4",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
