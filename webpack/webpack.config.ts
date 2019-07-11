@@ -14,6 +14,11 @@ const config: Configuration = {
       }
     ]
   },
+  externals: {
+    react: "React",
+    "react-dom": "ReactDOM",
+    "styled-components": "styled"
+  },
   plugins: [new Manifest()]
 };
 

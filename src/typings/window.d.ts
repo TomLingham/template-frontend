@@ -1,3 +1,6 @@
 interface Window {
-  CONFIG: IAppConfig;
+  Jobish: {
+    cdn: string;
+    config: IAppConfig;
+  };
 }

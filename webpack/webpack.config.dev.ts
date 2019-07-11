@@ -1,7 +1,6 @@
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import path from "path";
 import config from "./webpack.config";
-import { loadConfig } from "./util/config";
 
 config.mode = "development";
 
@@ -15,7 +14,7 @@ config.plugins!.push(
   new HtmlWebpackPlugin({
     template: path.resolve(__dirname, "index.html"),
     templateParameters: {
-      config: JSON.stringify(loadConfig("local"))
+      config: JSON.stringify(require("../config/local.json"))
     },
     title: "Jobi.sh"
   })

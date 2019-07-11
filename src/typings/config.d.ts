@@ -1,1 +1,3 @@
-interface IAppConfig {}
+interface IAppConfig {
+  API: string;
+}
