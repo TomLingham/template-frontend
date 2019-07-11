@@ -14,7 +14,8 @@ config.plugins!.push(
   new HtmlWebpackPlugin({
     template: path.resolve(__dirname, "index.html"),
     templateParameters: {
-      config: JSON.stringify(require("../config/local.json"))
+      config: require("../config/local.json"),
+      modules: require("../config/modules.json")
     },
     title: "Jobi.sh"
   })

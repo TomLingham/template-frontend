@@ -11,24 +11,15 @@
     />
     <script>
       //<![CDATA[
-      Jobish = {
-        conf: <%= config %>
+      var Jobish = {
+        conf: <%= JSON.stringify(config) %>
       };
       //]]>
     </script>
   </head>
   <body>
-    <script
-      crossorigin
-      src="https://unpkg.com/react@16.8.6/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@16.8.6/umd/react-dom.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/styled-components@4.3.2/dist/styled-components.js"
-    ></script>
+    <% modules.forEach(m => { %>
+    <script crossorigin src="<%- m %>"></script>
+    <% }) %>
   </body>
 </html>

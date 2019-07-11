@@ -36,8 +36,9 @@ deploy:
 
 .PHONY: pipeline
 pipeline:
-	@git diff-index --quiet HEAD -- || (echo "Staging area is not empty. Please commit your changes."; exit 1)
+	@make clean
 	@make prepare
+	@git diff-index --quiet HEAD -- || (echo "Staging area is not empty. Please commit your changes."; exit 1)
 	@make check
 	@make build
 	@make publish
