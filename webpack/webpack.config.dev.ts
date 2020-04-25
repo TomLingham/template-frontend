@@ -4,10 +4,10 @@ import config from "./webpack.config";
 
 config.mode = "development";
 
-config.devtool = "cheap-module-eval-source-map";
+config.devtool = "cheap-module-source-map";
 
 config.devServer = {
-  disableHostCheck: true
+  disableHostCheck: true,
 };
 
 config.plugins!.push(
@@ -15,9 +15,9 @@ config.plugins!.push(
     template: path.resolve(__dirname, "index.html"),
     templateParameters: {
       config: require("../config/local.json"),
-      modules: require("../config/modules.json")
+      modules: require("./modules.json"),
     },
-    title: "Jobi.sh"
+    title: "Page Title",
   })
 );
 

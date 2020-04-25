@@ -1,5 +1,5 @@
 interface Window {
-  Jobish: {
+  Env: {
     cdn: string;
     config: IAppConfig;
   };

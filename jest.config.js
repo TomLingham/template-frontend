@@ -4,5 +4,5 @@ module.exports = {
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
   testMatch: ["<rootDir>/**/__test__/**/*.test.ts?(x)"],
   transform: { "^.+\\.(ts|tsx)$": "babel-jest" },
-  setupFilesAfterEnv: ["<rootDir>/test/jest.setup.ts"]
+  setupFilesAfterEnv: ["<rootDir>/scripts/jest.setup.ts"],
 };
