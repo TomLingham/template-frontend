@@ -42,7 +42,7 @@ const Paragraph = styled.p`
 
 export default () => (
   <Page>
-    <H1>Howdy, stranger!</H1>
+    <H1 data-test-id="page-heading">Howdy, stranger!</H1>
     <Columns>
       <Col>
         <Paragraph>Your application configuration is output below:</Paragraph>

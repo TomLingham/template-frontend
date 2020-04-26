@@ -20,6 +20,10 @@ check:
 clean:
 	rm -rf dist
 
+.PHONY: e2e/run
+e2e/run:
+	(cd e2e; npx jest)
+
 .PHONY: pipeline
 pipeline:
 	@make clean

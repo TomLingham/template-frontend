@@ -9,9 +9,9 @@ export default createGlobalStyle`
     bottom: 0;
   }
   body {
+    font-family: Merriweather, Helvetica, Arial, sans-serif;
     background: #efefef;
     margin: 0;
-    font-family: Merriweather, Helvetica, Arial, sans-serif;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: Lora, serif;
