@@ -1,5 +1,5 @@
 interface Window {
-  Env: {
+  __maiar: {
     cdn: string;
     config: IAppConfig;
   };

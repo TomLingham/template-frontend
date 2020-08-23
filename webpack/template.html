@@ -10,16 +10,11 @@
       rel="stylesheet"
     />
     <script>
-      //<![CDATA[
-      var Env = {
+      var __maiar = {
         config: <%= JSON.stringify(config) %>
       };
-      //]]>
     </script>
   </head>
   <body>
-    <% modules.forEach(m => { %>
-    <script crossorigin src="<%- m %>"></script>
-    <% }) %>
   </body>
 </html>

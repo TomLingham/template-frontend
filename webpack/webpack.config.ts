@@ -19,11 +19,28 @@ const config: Configuration = {
     ],
   },
   externals: {
-    react: "React",
-    "react-dom": "ReactDOM",
-    "styled-components": "styled",
+    // react: "React",
+    // "react-dom": "ReactDOM",
+    // "styled-components": "styled",
   },
-  plugins: [new Manifest() as WebpackPluginInstance],
+  plugins: [
+    new Manifest({
+      generate: (_seed, filed, _entrypoints) => {
+        return {
+          version: "1.0",
+          name: "maiar",
+          buildDateTime: new Date().toISOString(),
+          type: "spa",
+          page: {
+            assets: filed.reduce(
+              (f, n) => (n.isInitial ? { ...f, [n.name ?? ""]: n.path } : f),
+              {}
+            ),
+          },
+        };
+      },
+    }) as WebpackPluginInstance,
+  ],
 };
 
 export default config;

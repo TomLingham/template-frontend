@@ -46,7 +46,7 @@ export default () => (
     <Columns>
       <Col>
         <Paragraph>Your application configuration is output below:</Paragraph>
-        <pre>{JSON.stringify(window.Env.config, null, 2)}</pre>
+        <pre>{JSON.stringify(window.__maiar.config, null, 2)}</pre>
       </Col>
       <Col>
         <Paragraph>
@@ -54,9 +54,7 @@ export default () => (
           illo accusamus obcaecati rerum a quo corporis laboriosam neque odit.
           Fugiat esse possimus sint! Nostrum ullam ex animi fugit ipsum quos
           doloribus consectetur repudiandae sunt fugiat omnis alias facere fuga,
-          ab eos maxime illum laborum laboriosam corrupti cupiditate! Aperiam
-          obcaecati voluptate dolore, magni odio rem explicabo nihil itaque eos
-          expedita pariatur autem dicta repellendus laborum eum adipisci ipsum.
+          ab eos maxime illum laborum laboriosam corrupti cupiditate!
         </Paragraph>
       </Col>
     </Columns>
